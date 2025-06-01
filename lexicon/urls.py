@@ -1,4 +1,6 @@
 from django.urls import path
-from . import views
+from . import views # Asegúrate de que esta línea esté presente
 
-urlpatterns = [] # Lista de URLs vacía
+urlpatterns = [
+    path('', views.index, name='index'), # <--- ¡Añade esta línea!
+]
